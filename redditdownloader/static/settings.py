@@ -211,7 +211,7 @@ class Setting(object):
 
 # =========  DEFAULT SETTINGS  =========
 add("auth", Setting("refresh_token", '', desc="Use this to safely authorize RMD to read your Reddit account."))
-add("auth", Setting("rmd_client_key", 'v4XVrdEH_A-ZaA', desc="Change only if you know what you're doing.", public=False))
+add("auth", Setting("rmd_client_key", '', desc="Change only if you know what you're doing."))
 add("auth", Setting("client_secret", '', desc="The client secret for the app"))
 add("auth", Setting("user_agent", 'RMD-Scanner-%s' % uuid.uuid4(), desc="The user agent to identify as, wherever possible."))
 add("auth", Setting("oauth_key", str(uuid.uuid4()), desc="Internal key.", public=False))

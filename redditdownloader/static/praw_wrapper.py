@@ -52,7 +52,7 @@ def init():
 	_reddit = praw.Reddit(
 		client_id=settings.get('auth.rmd_client_key'),
 		client_secret=settings.get('auth.client_secret'),
-		redirect_uri='http://%s:%s/authorize' % ('localhost', '7505'),
+		redirect_uri='http://%s:%s/authorize' % ('localhost', '8080'),
 		user_agent=settings.get('auth.user_agent'),
 		refresh_token=refresh,
 		check_for_updates=False
