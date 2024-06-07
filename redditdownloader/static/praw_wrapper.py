@@ -51,7 +51,7 @@ def init():
 		refresh = settings.get('auth.refresh_token')
 	_reddit = praw.Reddit(
 		client_id=settings.get('auth.rmd_client_key'),
-		client_secret=None,
+		client_secret=settings.get('auth.client_secret'),
 		redirect_uri='http://%s:%s/authorize' % ('localhost', '7505'),
 		user_agent=settings.get('auth.user_agent'),
 		refresh_token=refresh,
